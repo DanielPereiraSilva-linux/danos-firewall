@@ -6,20 +6,18 @@
 void exibir_ajuda() {
     printf("Uso: danos [opcao] [comando] [argumentos]\n");
     printf("Opcoes disponíveis:\n");
-    printf("  -h        Exibe esta ajuda\n");
-    printf("  -v        Exibe a versão do script\n");
+    printf("  -h          Exibe esta ajuda\n");
+    printf("  -v          Exibe a versão do script\n");
     printf("Comandos disponíveis:\n");
-    printf("  regras    Exibe as regras do firewall\n");
-    printf("  addport   Adiciona uma porta ao firewall\n");
-    printf("  removeport Remove uma porta do firewall\n");
-    printf("  services  Lista os serviços em execução\n");
-    printf("  update    Atualiza o sistema\n");
-    printf("  upgrade   Atualiza todos os pacotes do sistema\n");
-    printf("  backup    Cria um backup das regras do firewall\n");
-    printf("  restore   Restaura o backup das regras do firewall\n");
-    printf("  dns       Configura servidores DNS\n");
-    printf("  block-user Bloqueia um usuário\n");
-    printf("  allow-user Permite um usuário\n");
+    printf("  regras      Exibe as regras do firewall\n");
+    printf("  addport     Adiciona uma porta ao firewall\n");
+    printf("  removeport  Remove uma porta do firewall\n");
+    printf("  update      Atualiza e faz o upgrade de todos os pacotes do sistema\n");
+    printf("  backup      Cria um backup das regras do firewall\n");
+    printf("  restore     Restaura o backup das regras do firewall\n");
+    printf("  dns         Configura servidores DNS\n");
+    printf("  block-user  Bloqueia um usuário\n");
+    printf("  allow-user  Permite um usuário\n");
 }
 
 // Função para exibir a versão do script
@@ -49,24 +47,13 @@ void remover_porta(int porta, char *protocolo) {
     printf("Porta %d %s removida do firewall.\n", porta, protocolo);
 }
 
-// Função para listar os serviços em execução
-void listar_servicos() {
-    printf("Exibindo os serviços em execução...\n");
-    system("systemctl list-units --type=service --state=running");
-}
-
-// Função para atualizar o sistema
+// Função para atualizar o sistema e os pacotes
 void atualizar_sistema() {
     printf("Atualizando repositórios...\n");
     system("sudo apt-get update");
-    printf("Sistema atualizado.\n");
-}
-
-// Função para atualizar todos os pacotes
-void atualizar_pacotes() {
     printf("Atualizando todos os pacotes...\n");
     system("sudo apt-get upgrade -y");
-    printf("Todos os pacotes foram atualizados.\n");
+    printf("Sistema e pacotes foram atualizados.\n");
 }
 
 // Função para criar um backup das regras do firewall
@@ -135,12 +122,8 @@ int main(int argc, char *argv[]) {
     } else if (strcmp(argv[1], "removeport") == 0 && argc == 4) {
         int porta = atoi(argv[2]);
         remover_porta(porta, argv[3]);
-    } else if (strcmp(argv[1], "services") == 0) {
-        listar_servicos();
     } else if (strcmp(argv[1], "update") == 0) {
         atualizar_sistema();
-    } else if (strcmp(argv[1], "upgrade") == 0) {
-        atualizar_pacotes();
     } else if (strcmp(argv[1], "backup") == 0) {
         criar_backup();
     } else if (strcmp(argv[1], "restore") == 0) {
