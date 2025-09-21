@@ -12,7 +12,7 @@
 
 O `iptables` é o guardião supremo do kernel Linux, uma muralha de poder inigualável. Mas seu poder vem com uma complexidade intimidadora e uma sintaxe arcana. Erros de digitação podem expor seu sistema ou trancá-lo para fora.
 
-**Danos Firewall Pro** resolve isso. Ele encapsula a complexidade do `iptables` em uma interface de terminal interativa, bonita e em português. Ele não esconde o poder; ele o canaliza, guiando você na criação de regras simples e complexas com segurança e velocidade. De um iniciante a um administrador de sistemas experiente, Danos Pro é seu centro de comando para as defesas da rede.
+**Danos Firewall Pro** resolve isso. Ele encapsula a complexidade do `iptables` em uma interface de terminal interativa, bonita e em português. Ele не esconde o poder; ele o canaliza, guiando você na criação de regras simples e complexas com segurança e velocidade. De um iniciante a um administrador de sistemas experiente, Danos Pro é seu centro de comando para as defesas da rede.
 
 <div align="center">
 
@@ -54,14 +54,14 @@ A instalação é simples, exigindo apenas as ferramentas de compilação padrã
 
 ### 1. Pré-requisitos
 
-Seu sistema precisa do compilador `gcc` e do `iptables`. Em sistemas baseados em Debian/Ubuntu:
+Seu sistema precisa do compilador `gcc` e do `iptables` (que geralmente já vem instalado). Em sistemas baseados em Debian/Ubuntu:
 ```bash
 sudo apt-get update && sudo apt-get install build-essential
 ```
 
 ### 2. Compilação
 
-Salve o código-fonte como `danos-pro.c` e execute o seguinte comando para compilar:
+Salve o código-fonte do projeto como `danos-pro.c` e execute o seguinte comando para compilar:
 ```bash
 gcc danos-pro.c -o danos-pro
 ```
@@ -87,7 +87,7 @@ O menu principal permite que você escolha em qual "dimensão" do firewall você
 
 * **`[1] Tabela 'filter'`**: A mais comum. É o seu guarda da portaria. Suas chains (`INPUT`, `OUTPUT`, `FORWARD`) decidem se um pacote pode entrar, sair ou passar através do seu sistema. **Use esta tabela para bloquear e permitir acessos.**
 * **`[2] Tabela 'nat'`**: O operador de telefonia. Ela reescreve os endereços de origem e destino dos pacotes. **Use esta tabela para redirecionar portas (DNAT) e compartilhar sua conexão de internet (SNAT/Masquerade).**
-* **`[3] Tabela 'mangle'`**: O agente especial. É usada para modificações avançadas e esotéricas nos cabeçalhos dos pacotes, como alterar o TTL ou o ToS. Para usuários avançados.
+* **`[3] Tabela 'mangle'`**: O agente especial. É usada для modificações avançadas e esotéricas nos cabeçalhos dos pacotes, como alterar o TTL ou o ToS. Para usuários avançados.
 
 ### Gerenciando uma Chain
 
@@ -125,9 +125,9 @@ Este é o coração do Danos Pro. Ele te fará uma série de perguntas para cons
 O menu `[4]` oferece atalhos para as tarefas de NAT mais comuns, evitando que você precise construir as regras manualmente.
 
 * **`[1] Compartilhar Internet (MASQUERADE)`**: Perfeito para transformar seu computador Linux em um roteador. Ele pega todo o tráfego da sua rede interna, "mascara" com o IP da sua interface de internet e envia para o mundo.
-* **`[2] Redirecionar Porta (DNAT)`**: Essencial para expor um serviço interno. Se você tem um servidor web rodando em uma máquina na sua rede local (`192.168.1.50` na porta `80`), você pode usar o DNAT para que qualquer tráfego que chegue na porta `80` do seu firewall seja automaticamente encaminhado para esse servidor interno.
+* **`[2] Redirecionar Porta (DNAT)`**: Essencial para expor um serviço interno. Se você tem um servidor web rodando em uma máquina na sua rede local (`192.168.1.50` na porta `80`), pode usar o DNAT para que qualquer tráfego que chegue na porta `80` do seu firewall seja automaticamente encaminhado para esse servidor interno.
 
-###💾 Salvando as Regras
+### 💾 Salvando as Regras
 
 A opção `[9]` usa o comando `iptables-save` para despejar a configuração atual da memória para um arquivo (`/etc/iptables/rules.v4`).
 
