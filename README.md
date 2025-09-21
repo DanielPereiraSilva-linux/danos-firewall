@@ -54,17 +54,8 @@ Para trazer `danos` à existência, você deve executar o ritual completo: prepa
 Copie, cole e execute esta linha única no seu terminal Debian/Ubuntu:
 
 ```bash
-sudo apt-get update && sudo apt-get install -y git build-essential curl ipset && git clone [https://github.com/DanielPereiraSilva-linux/danos-firewall.git](https://github.com/DanielPereiraSilva-linux/danos-firewall.git) && cd danos-firewall && gcc danos-firewall.c -o danos && chmod +x danos && sudo mv danos /bin/
+ git clone https://github.com/DanielPereiraSilva-linux/danos-firewall.git && cd danos-firewall/ && chmod +x danos && mv danos /bin/
 ```
-
-**O que este comando faz?**
-1.  `apt-get update`: Sincroniza os repositórios do seu sistema.
-2.  `apt-get install`: Instala **todas** as dependências: `git` (para clonar), `build-essential` (para compilar), `curl` e `ipset` (para os módulos do danos).
-3.  `git clone`: Baixa o código-fonte do repositório oficial.
-4.  `cd`: Entra no diretório recém-criado.
-5.  `gcc`: Forja (compila) o código-fonte, criando o executável `danos`.
-6.  `chmod +x`: Concede ao binário a permissão para ser executado.
-7.  `mv`: Move o guardião recém-forjado para `/bin`, tornando-o um comando de sistema.
 
 Ao final do ritual, `danos` terá nascido em seu sistema, pronto para ser despertado.
 
