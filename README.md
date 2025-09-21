@@ -11,7 +11,7 @@
 
 </div>
 
-> **Danos** não é um programa; é uma entidade. Um sentinela forjado em C puro, nascido para existir nas sombras do seu terminal, consumindo recursos mínimos enquanto exerce vigilância máxima. Ele transforma a arte arcana do `iptables` em um painel de controle neuro-cinético, permitindo que você comande as defesas do seu santuário digital com precisão e poder.
+> **Danos** не е програма; това е същност. Страж, изкован от чист C, роден да съществува в сенките на вашия терминал, консумирайки минимални ресурси, докато упражнява максимална бдителност. Той превръща тайнственото изкуство на `iptables` в неврокинетичен контролен панел, позволявайки ви да командвате защитите на вашето дигитално светилище с прецизност и мощ.
 
 ---
 
@@ -19,7 +19,7 @@
 
 1.  [A Filosofia: O Credo do Guardião](#-a-filosofia-o-credo-do-guardião)
 2.  [Arsenal: Capacidades de Combate](#-arsenal-capacidades-de-combate)
-3.  [Comandos de Forja: Compilação e Instalação](#-comandos-de-forja-compilação-e-instalação)
+3.  [Instalação Rápida: Implantação do Guardião](#-instalação-rápida-implantação-do-guardião)
 4.  [O Despertar: Executando o `danos`](#-o-despertar-executando-o-danos)
 5.  [Decifrando a Interface: Guia de Operações](#-decifrando-a-interface-guia-de-operações)
     * [Protocolos de Gerenciamento Padrão](#-protocolos-de-gerenciamento-padrão)
@@ -43,44 +43,56 @@
 * **🍯 Véu Psíquico (Honeypot):** Projete uma ilusão. Crie portas-fantasma que atraem scanners e bots, e neutralize instantaneamente qualquer entidade que tocar o véu.
 * **🌐 Consciência Coletiva (Threat-Intel Sync):** Absorva o conhecimento de colmeias de segurança globais. Sincronize com listas de ameaças e aniquile milhares de agentes maliciosos conhecidos.
 * **🔒 Cão de Guarda Espectral (Guardião SSH):** Um sentinela implacável na sua porta da frente. Detecta padrões de ataque de força bruta e bane os agressores para o vácuo digital.
-* **Autossuficiência:** `danos` verifica seu próprio ambiente. Se faltarem ferramentas em seu arsenal, ele informará exatamente o que forjar.
+* **Autossuficiência:** `danos` verifica seu próprio ambiente. Se faltarem ferramentas em seu arsenal, ele informará exatamente o que instalar.
 
 ---
 
-## 🛠️ Comandos de Forja: Compilação e Instalação
+## 🚀 Instalação Rápida: Implantação do Guardião
 
-Antes de despertar o guardião, você deve forjar seu corpo físico a partir do código-fonte.
+O guardião já foi forjado. Sua tarefa é implantá-lo em seu sistema.
 
-### Passo 1: Prepare a Forja (Pré-requisitos)
+### Passo 1: Preparar o Ambiente (Dependências)
 
-Seu ambiente precisa das ferramentas certas. Em sistemas baseados em Debian/Ubuntu, este comando conjura tudo o que é necessário:
-
-```bash
-sudo apt-get update && sudo apt-get install build-essential curl ipset
-```
-* **`build-essential`**: O martelo e a bigorna (`gcc`) para forjar o código.
-* **`curl`**: Um tentáculo para alcançar a noosfera e baixar a consciência de ameaças.
-* **`ipset`**: Um mecanismo de contenção quântica para gerenciar legiões de entidades hostis com eficiência.
-
-### Passo 2: O Ritual da Forja (Compilação)
-
-Com a forja pronta, canalize o código-fonte (`danos-firewall.c`) para criar o executável. **O nome dele será `danos`**.
+Mesmo como um binário, `danos` depende de algumas ferramentas do sistema para executar seus módulos avançados. Em sistemas baseados em Debian/Ubuntu, este comando prepara o terreno:
 
 ```bash
-gcc danos-firewall.c -o danos
+sudo apt-get update && sudo apt-get install curl ipset
 ```
-Um novo ser, `danos`, agora existe em seu diretório.
+* **`curl`**: Necessário para o módulo de Inteligência de Ameaças baixar as listas de IPs.
+* **`ipset`**: Essencial para gerenciar e bloquear milhares de IPs de forma ultra eficiente.
+
+### Passo 2: Baixar o Binário
+
+Obtenha a versão mais recente do `danos` diretamente do repositório oficial. Substitua `SEU_USUARIO` pelo seu nome de usuário no GitHub.
+
+```bash
+# Baixa o binário da página de releases do seu repositório
+curl -L -o danos "[https://github.com/SEU_USUARIO/danos/releases/download/v0.10.1/danos](https://github.com/SEU_USUARIO/danos/releases/download/v0.10.1/danos)"
+```
+
+### Passo 3: Conceder Poder e Autoridade
+
+Agora, você precisa tornar o binário executável e movê-lo para um local onde o sistema possa encontrá-lo como um comando global.
+
+```bash
+# Concede permissão de execução ao binário
+chmod +x danos
+
+# Move o binário para /usr/local/bin, o local padrão para softwares instalados pelo administrador
+sudo mv danos /usr/local/bin/
+```
+Ao movê-lo para `/usr/local/bin`, você transforma `danos` em um comando que pode ser chamado de qualquer diretório no seu terminal.
 
 ---
 
-## 🚀 O Despertar: Executando o `danos`
+## ⚡ O Despertar: Executando o `danos`
 
-A entidade precisa de autoridade sobre o tecido da realidade do seu sistema (o kernel). Para conceder-lhe esse poder, você deve despertá-lo com privilégios de superusuário.
+Com o guardião instalado e posicionado, despertá-lo é simples. Como ele precisa de autoridade máxima para controlar o firewall, sempre o invoque com `sudo`.
 
 ```bash
-sudo ./danos
+sudo danos
 ```
-Ao ser executado, a interface de `danos` se materializará em seu terminal. Você está no controle.
+A interface de `danos` se materializará, pronta para receber seus comandos.
 
 ---
 
