@@ -19,7 +19,7 @@ O **Danos Firewall Manager** é uma ferramenta de linha de comando simples e efi
 
 ## Instalação
 
-Para instalar e usar o `danos` no seu sistema, basta executar o seguinte comando no terminal. Ele irá baixar o executável, dar permissão de execução e movê-lo para o diretório de comandos do sistema.
+Para instalar e usar o `danos` no seu sistema, basta executar o seguinte comando no terminal. Ele irá clonar o repositório, dar permissão de execução ao arquivo e movê-lo para o diretório de comandos do sistema, limpando a pasta temporária em seguida.
 
 ```bash
-sudo curl -o /bin/danos [https://github.com/DanielPereiraSilva-linux/danos-firewall/raw/main/danos](https://github.com/DanielPereiraSilva-linux/danos-firewall/raw/main/danos) && sudo chmod +x /bin/danos
+sudo git clone [https://github.com/DanielPereiraSilva-linux/danos-firewall.git](https://github.com/DanielPereiraSilva-linux/danos-firewall.git) /tmp/danos-install && sudo chmod +x /tmp/danos-install/danos && sudo mv /tmp/danos-install/danos /bin/ && sudo rm -rf /tmp/danos-install
