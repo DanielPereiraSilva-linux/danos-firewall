@@ -1,6 +1,6 @@
 # Danos Firewall Manager
 
-O **Danos Firewall Manager** é uma ferramenta de linha de comando simples e eficaz, escrita em C, para gerenciar tarefas comuns de administração de sistema em distribuições baseadas em Debian (como o Ubuntu). Ele simplifica o controle do **firewall** (`iptables`), a gestão de **serviços**, a **atualização** do sistema e o **gerenciamento de usuários** de forma rápida e segura.
+O **Danos Firewall Manager** é uma ferramenta de linha de comando simples e eficaz, escrita em C, para gerenciar tarefas comuns de administração de sistema. **Atualmente, o script foi testado e é garantido que funcione em distribuições baseadas em Debian, como o Ubuntu.** Ele simplifica o controle do **firewall** (`iptables`), a gestão de **serviços**, a **atualização** do sistema e o **gerenciamento de usuários** de forma rápida e segura.
 
 > **Atenção:** Este script deve ser executado com permissões de superusuário (root) para a maioria de suas funções, como a modificação das regras do firewall e atualizações do sistema.
 
