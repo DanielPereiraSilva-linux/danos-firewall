@@ -1,6 +1,7 @@
 # Danos Firewall Manager
 
-![Logo Danos Firewall Manager](https://github.com/DanielPereiraSilva-linux/danos-firewall/blob/main/logo_danos_firewall.png?raw=true)
+![Logo Danos Firewall Manager](https://github.com/DanielPereiraSilva-linux/danos-firewall/blob/main/Gemini_Generated_Image_qpzwjsqpzwjsqpzw.png?raw=true)
+
 O **Danos Firewall Manager** é uma ferramenta de linha de comando robusta e intuitiva, desenvolvida em C, projetada para simplificar a administração de tarefas essenciais do sistema em ambientes Linux. **Atualmente, este script foi rigorosamente testado e tem seu funcionamento garantido em distribuições baseadas em Debian, como o Ubuntu.** Sua principal missão é otimizar e centralizar o gerenciamento do **firewall** (`iptables`), a supervisão e controle de **serviços**, a execução de **atualizações** do sistema e a administração de **usuários** de maneira ágil, eficiente e segura.
 
 > **Atenção:** A maioria das funcionalidades deste script requer permissões de superusuário (root) para serem executadas com sucesso. Isso inclui operações como modificação das regras do firewall, instalação de atualizações do sistema e gerenciamento de usuários.
@@ -22,7 +23,7 @@ O Danos Firewall Manager oferece uma suíte de funcionalidades que cobre aspecto
 
 ## Instalação
 
-Para instalar e começar a usar o `danos` em seu sistema, execute o comando abaixo em seu terminal. Este comando automatiza o processo de clonar o repositório, conceder permissões de execução ao executável e movê-lo para um diretório do sistema (`/bin`), garantindo que o `danos` possa ser invocado de qualquer lugar.
+Para instalar e começar a usar o `danos` em seu sistema, execute o seguinte comando no terminal. Ele irá clonar o repositório, dar permissão de execução ao arquivo e movê-lo para o diretório de comandos do sistema, limpando a pasta temporária em seguida.
 
 ```bash
 sudo git clone [https://github.com/DanielPereiraSilva-linux/danos-firewall.git](https://github.com/DanielPereiraSilva-linux/danos-firewall.git) /tmp/danos-install && sudo chmod +x /tmp/danos-install/danos && sudo mv /tmp/danos-install/danos /bin/ && sudo rm -rf /tmp/danos-install
