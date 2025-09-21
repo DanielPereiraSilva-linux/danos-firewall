@@ -19,21 +19,22 @@ O **Danos Firewall Manager** é uma ferramenta de linha de comando simples e efi
 
 ## Instalação
 
-A instalação é simples e direta. Siga os passos abaixo para compilar o código e mover o executável para o diretório `/bin`, tornando o comando `danos` acessível a partir de qualquer lugar no terminal.
+Para instalar e usar o `danos` no seu sistema, siga estes passos simples:
 
-1.  **Compile o código C:**
-    ```bash
-    gcc danos.c -o danos
-    ```
-2.  **Mova o executável para o diretório de comandos do sistema:**
+1.  **Baixe o executável `danos` para o seu computador.**
+    (Adicione o link para o download aqui, por exemplo: `[danos](https://github.com/seuperfil/seurepositorio/releases/download/v1.0/danos)`)
+
+2.  **Mova o arquivo para o diretório de comandos do sistema:**
     ```bash
     sudo mv danos /bin/
     ```
-3.  **Dê permissões de execução:**
+
+3.  **Dê permissões de execução para o arquivo:**
     ```bash
     sudo chmod +x /bin/danos
     ```
-Agora você pode usar o comando `danos` de qualquer diretório.
+
+Agora você pode usar o comando `danos` de qualquer diretório no seu terminal.
 
 ---
 
