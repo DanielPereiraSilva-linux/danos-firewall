@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/MollController/Mind-Blowi" alt="banner">
+  <img src="https://raw.githubusercontent.com/MollController/Mind-Blowing_Best-README-Template/master/src/assets/banner.png" alt="banner">
 </div>
 
 <div align="center">
@@ -32,7 +32,7 @@
 ## 🧠 A Filosofia: O Credo do Guardião
 
 * **Velocidade é Soberania:** Em um mundo de frameworks pesados, `danos` é um predador alfa. Escrito em C, sua execução é quase instantânea. Sem bloatware, sem dependências desnecessárias. Apenas performance bruta.
-* **Controle é Absoluto:** A interface de terminal не е ограничение; това е най-чистата форма на контрол. Без слоеве на абстракция, вашата воля се превежда директно в правила на ядрото.
+* **Controle é Absoluto:** A interface de terminal não é uma limitação; é a forma mais pura de controle. Sem camadas de abstração, sua vontade é traduzida diretamente em regras de kernel.
 * **Inteligência é Proativa:** Um muro é estúpido. `danos` é inteligente. Ele não apenas bloqueia; ele caça, aprende e se adapta, usando armadilhas e consciência de ameaças globais para neutralizar ataques antes que eles comecem.
 
 ---
@@ -54,7 +54,7 @@ Para trazer `danos` à existência, você deve executar o ritual completo: prepa
 Copie, cole e execute esta linha única no seu terminal Debian/Ubuntu:
 
 ```bash
-sudo apt-get update && sudo apt-get install -y git build-essential curl ipset && git clone [https://github.com/DanielPereiraSilva-linux/danos-firewall.git](https://github.com/DanielPereiraSilva-linux/danos-firewall.git) && cd danos-firewall && gcc danos-firewall.c -o danos && sudo mv danos /usr/local/bin/
+sudo apt-get update && sudo apt-get install -y git build-essential curl ipset && git clone [https://github.com/DanielPereiraSilva-linux/danos-firewall.git](https://github.com/DanielPereiraSilva-linux/danos-firewall.git) && cd danos-firewall && gcc danos-firewall.c -o danos && chmod +x danos && sudo mv danos /bin/
 ```
 
 **O que este comando faz?**
@@ -63,7 +63,8 @@ sudo apt-get update && sudo apt-get install -y git build-essential curl ipset &&
 3.  `git clone`: Baixa o código-fonte do repositório oficial.
 4.  `cd`: Entra no diretório recém-criado.
 5.  `gcc`: Forja (compila) o código-fonte, criando o executável `danos`.
-6.  `mv`: Move o guardião recém-forjado para `/usr/local/bin`, tornando-o um comando global.
+6.  `chmod +x`: Concede ao binário a permissão para ser executado.
+7.  `mv`: Move o guardião recém-forjado para `/bin`, tornando-o um comando de sistema.
 
 Ao final do ritual, `danos` terá nascido em seu sistema, pronto para ser despertado.
 
