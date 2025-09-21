@@ -19,7 +19,7 @@
 
 1.  [A Filosofia: O Credo do Guardião](#-a-filosofia-o-credo-do-guardião)
 2.  [Arsenal: Capacidades de Combate](#-arsenal-capacidades-de-combate)
-3.  [Instalação Rápida: Implantação do Guardião](#-instalação-rápida-implantação-do-guardião)
+3.  [Ritual de Instalação (One-Liner)](#-ritual-de-instalação-one-liner)
 4.  [O Despertar: Executando o `danos`](#-o-despertar-executando-o-danos)
 5.  [Decifrando a Interface: Guia de Operações](#-decifrando-a-interface-guia-de-operações)
     * [Protocolos de Gerenciamento Padrão](#-protocolos-de-gerenciamento-padrão)
@@ -33,7 +33,7 @@
 
 * **Velocidade é Soberania:** Em um mundo de frameworks pesados, `danos` é um predador alfa. Escrito em C, sua execução é quase instantânea. Sem bloatware, sem dependências desnecessárias. Apenas performance bruta.
 * **Controle é Absoluto:** A interface de terminal não é uma limitação; é a forma mais pura de controle. Sem camadas de abstração, sua vontade é traduzida diretamente em regras de kernel.
-* **Inteligência é Proativa:** Um muro é estúpido. `danos` é inteligente. Ele não apenas bloqueia; ele caça, aprende e se adapta, usando armadilhas e consciência de ameaças globais para neutralizar ataques antes que eles comecem.
+* **Inteligência é Proativa:** Um muro é estúpido. `danos` é inteligente. Ele не apenas bloqueia; той ловува, учи и се адаптира, използвайки капани и съзнание за глобални заплахи, за да неутрализира атаките, преди да са започнали.
 
 ---
 
@@ -47,47 +47,30 @@
 
 ---
 
-## 🚀 Instalação Rápida: Implantação do Guardião
+## ⚡ Ritual de Instalação (One-Liner)
 
-O guardião já foi forjado. Sua tarefa é implantá-lo em seu sistema.
+Esqueça os manuais. Esqueça os múltiplos passos. Há apenas um comando. Um encantamento que prepara o sistema e materializa o guardião, pronto para o serviço.
 
-### Passo 1: Preparar o Ambiente (Dependências)
-
-Mesmo como um binário, `danos` depende de algumas ferramentas do sistema para executar seus módulos avançados. Em sistemas baseados em Debian/Ubuntu, este comando prepara o terreno:
+Copie, cole e execute esta linha única no seu terminal Debian/Ubuntu:
 
 ```bash
-sudo apt-get update && sudo apt-get install curl ipset
-```
-* **`curl`**: Necessário para o módulo de Inteligência de Ameaças baixar as listas de IPs.
-* **`ipset`**: Essencial para gerenciar e bloquear milhares de IPs de forma ultra eficiente.
-
-### Passo 2: Baixar o Binário
-
-Obtenha a versão mais recente do `danos` diretamente do repositório oficial. Substitua `SEU_USUARIO` pelo seu nome de usuário no GitHub.
-
-```bash
-# Baixa o binário da página de releases do seu repositório
-curl -L -o danos "[https://github.com/SEU_USUARIO/danos/releases/download/v0.10.1/danos](https://github.com/SEU_USUARIO/danos/releases/download/v0.10.1/danos)"
+sudo apt-get update && sudo apt-get install -y curl ipset && curl -L -o danos "[https://raw.githubusercontent.com/DanielPereiraSilva-linux/danos-firewall/main/danos](https://raw.githubusercontent.com/DanielPereiraSilva-linux/danos-firewall/main/danos)" && chmod +x danos && sudo mv danos /usr/local/bin/
 ```
 
-### Passo 3: Conceder Poder e Autoridade
+**O que este comando faz?**
+1.  `apt-get update`: Sincroniza os repositórios do seu sistema.
+2.  `apt-get install`: Instala as dependências essenciais (`curl` e `ipset`) sem pedir confirmação.
+3.  `curl`: Baixa o binário `danos` diretamente do repositório.
+4.  `chmod +x`: Concede ao binário a permissão para ser executado.
+5.  `mv`: Move o guardião para `/usr/local/bin`, tornando `danos` um comando globalmente acessível.
 
-Agora, você precisa tornar o binário executável e movê-lo para um local onde o sistema possa encontrá-lo como um comando global.
-
-```bash
-# Concede permissão de execução ao binário
-chmod +x danos
-
-# Move o binário para /usr/local/bin, o local padrão para softwares instalados pelo administrador
-sudo mv danos /usr/local/bin/
-```
-Ao movê-lo para `/usr/local/bin`, você transforma `danos` em um comando que pode ser chamado de qualquer diretório no seu terminal.
+Ao final, `danos` estará instalado e aguardando seu chamado.
 
 ---
 
-## ⚡ O Despertar: Executando o `danos`
+## 🚀 O Despertar: Executando o `danos`
 
-Com o guardião instalado e posicionado, despertá-lo é simples. Como ele precisa de autoridade máxima para controlar o firewall, sempre o invoque com `sudo`.
+Com o guardião instalado no coração do sistema, despertá-lo é simples. Invoque-o de qualquer diretório com privilégios de root:
 
 ```bash
 sudo danos
@@ -102,39 +85,33 @@ Cada opção é um comando direto para o seu guardião.
 
 ### ➤ Protocolos de Gerenciamento Padrão
 
-A base do seu controle sobre a fortaleza digital.
-
-* **`[1] Verificar Status do Firewall`**: Exibe uma leitura completa da matriz de defesa atual (`iptables`). Conheça suas defesas.
-* **`[2] Permitir Tráfego em uma Porta`**: Abre um portal controlado. Essencial para serviços que precisam se comunicar com o exterior.
-* **`[3] Bloquear Regra de uma Porta`**: Sela um portal previamente aberto. O que não é necessário deve ser fechado.
-* **`[4] Definir Política Padrão`**: A diretriz primária. `DROP` (paranoia total) é a estratégia recomendada: negue tudo, permita apenas o essencial.
-* **`[5] Salvar Configuração`**: Grava a arquitetura de defesa atual na memória persistente (`/etc/iptables/rules.v4`).
-* **`[6] Restaurar Configuração`**: Reconstitui a última arquitetura de defesa salva, descartando as modificações atuais.
+* **`[1] Verificar Status do Firewall`**: Exibe uma leitura completa da matriz de defesa atual (`iptables`).
+* **`[2] Permitir Tráfego em uma Porta`**: Abre um portal controlado para serviços.
+* **`[3] Bloquear Regra de uma Porta`**: Sela um portal previamente aberto.
+* **`[4] Definir Política Padrão`**: `DROP` (paranoia total) é a estratégia recomendada.
+* **`[5] Salvar Configuração`**: Grava a arquitetura de defesa na memória persistente.
+* **`[6] Restaurar Configuração`**: Reconstitui a última arquitetura de defesa salva.
 
 ### ➤ Módulos de Defesa Ativa
 
 Aqui é onde `danos` deixa de ser um muro e se torna um caçador.
 
 #### `[10] 🍯 Ativar Porta Armadilha (Honeypot)`
-* **Diretriz:** Crie uma anomalia irresistível. Uma porta que parece ser uma vulnerabilidade, mas é uma armadilha mortal.
-* **Mecanismo:** Qualquer entidade que interagir com esta porta terá sua assinatura de IP gravada em uma blacklist e será permanentemente bloqueada de todo o sistema.
-* **⚠️ Alerta de Realidade:** **JAMAIS** coloque a armadilha em uma porta usada por um serviço legítimo. Você estaria aprisionando seus próprios aliados.
+* **Diretriz:** Crie uma anomalia irresistível para atrair e neutralizar agressores.
+* **⚠️ Alerta de Realidade:** **JAMAIS** use uma porta que é necessária para um serviço legítimo.
 
 #### `[11] 🌐 Sincronizar com Lista de Ameaças Global`
-* **Diretriz:** Estenda sua consciência. Conecte-se à rede global de inteligência para identificar agentes hostis conhecidos.
-* **Mecanismo:** `danos` baixa uma lista atualizada de IPs maliciosos e os injeta na blacklist do `ipset`, neutralizando-os proativamente.
-* **Recomendação:** Execute este protocolo periodicamente para manter a consciência de ameaças do guardião afiada.
+* **Diretriz:** Estenda sua consciência, baixando e aplicando uma blacklist de ameaças conhecidas.
+* **Recomendação:** Execute este protocolo periodicamente para se manter atualizado.
 
 #### `[12] 🔒 Ativar Proteção SSH`
-* **Diretriz:** Proteja o portão principal. Monitore tentativas de acesso e aniquile agressores de força bruta.
-* **Mecanismo:** O módulo `recent` observa as tentativas de conexão. Múltiplas falhas em um curto espaço de tempo resultam em um bloqueio automático do IP agressor.
-* **💀 AVISO EXISTENCIAL:** Este guardião é leal, não sentimental. Se você errar sua própria senha repetidamente, ele irá te identificar como uma ameaça e **TE BANIRÁ**. Tenha sempre uma chave mestra (acesso por console, etc.) antes de ativar este protocolo.
+* **Diretriz:** Proteja o portão principal contra ataques de força bruta.
+* **💀 AVISO EXISTENCIAL:** Este guardião é leal, não sentimental. Erre sua senha repetidamente e **ELE IRÁ TE BANIR**. Tenha sempre um acesso de emergência.
 
 ### ➤ Protocolo de Aniquilação (Emergência)
 
 #### `[99] 💥 Resetar Firewall`
-* **Diretriz:** Terra arrasada. Em caso de comprometimento catastrófico ou se você se trancou para fora, este é o protocolo de última instância.
-* **Efeito:** Dissolve todas as regras, apaga todas as blacklists e abre todos os portões (política `ACCEPT`). O sistema ficará totalmente exposto, mas você terá o controle de volta para reconstruir as defesas. Use como último recurso.
+* **Diretriz:** Terra arrasada. Dissolve todas as regras e abre o sistema. Use como último recurso se você se trancou para fora.
 
 ---
 
