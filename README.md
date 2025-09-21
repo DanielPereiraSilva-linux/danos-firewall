@@ -1,235 +1,140 @@
-# Danos Firewall Manager
+<div align="center">
+  <img src="https://raw.githubusercontent.com/MollController/Mind-Blowing_Best-README-Template/master/src/assets/banner.png" alt="banner">
+</div>
 
-![Logo Danos Firewall Manager](https://github.com/DanielPereiraSilva-linux/danos-firewall/blob/main/Gemini_Generated_Image_qpzwjsqpzwjsqpzw.png?raw=true){: .img-responsive width="200px"}
+<div align="center">
+  
+# 🛡️ Danos Firewall Manager v0.10.1 🛡️
 
----
+### _Sua primeira linha de defesa inteligente, forjada em C._
 
-## 🛡️ Visão Geral
+</div>
 
-O **Danos Firewall Manager** é uma ferramenta de linha de comando robusta, intuitiva e de código aberto, escrita em C. Sua missão primordial é simplificar e otimizar a administração de tarefas essenciais de segurança e manutenção em sistemas Linux. Desenvolvido para administradores de sistemas, entusiastas e qualquer pessoa que busque um controle granular sobre seu ambiente, o Danos oferece uma interface unificada para gerenciar o firewall, monitorar e controlar **serviços**, realizar **atualizações** de sistema e administrar **usuários** de forma eficiente e segura.
+**Danos Firewall Manager** não é apenas um script, é um sentinela para o seu sistema Linux. Escrito em C puro para ser ridiculamente rápido e leve, ele transforma o complexo `iptables` em um centro de comando interativo e poderoso no seu terminal. Gerencie regras, automatize defesas e cace ameaças ativamente.
 
-> **Compatibilidade:** O Danos Firewall Manager foi extensivamente testado e é **garantido para funcionar em distribuições baseadas em Debian, como Ubuntu e Debian.**
->
-> **Privilégios:** A maioria das funcionalidades deste script exige **permissões de superusuário (root)** para serem executadas com sucesso. Isso é fundamental para operações que alteram as regras do firewall, modificam configurações do sistema ou gerenciam contas de usuário.
+<div align="center">
 
----
+```
+############################################################
+#      DDDD      A      N   N    OOO     SSSSS           #
+#      D   D    A A     NN  N   O   O   S                #
+#      D   D   AAAAA    N N N   O   O    SSSSS           #
+#      D   D  A     A   N  NN   O   O         S          #
+#      DDDD  A       A  N   N    OOO     SSSSS           #
+#                                                          #
+#            Danos Firewall Manager v0.10.1             #
+############################################################
 
-## ✨ Principais Funcionalidades
+--- Gerenciamento Básico de Regras ---
+  [ 1] Verificar Status do Firewall (Listar Regras)
+  [ 2] Permitir Tráfego em uma Porta
+  [ 3] Bloquear Regra de uma Porta
+  [ 4] Definir Política Padrão (ACCEPT/DROP)
+  [ 5] Salvar Configuração Atual de Regras
+  [ 6] Restaurar Última Configuração Salva
 
-O Danos Firewall Manager agrupa um conjunto poderoso de ferramentas para gerenciamento de sistema:
+--- Módulos Avançados de Segurança ---
+  [10] Ativar Porta Armadilha (Honeypot)
+  [11] Sincronizar com Lista de Ameaças Global
+  [12] Ativar Proteção SSH (Anti-Força Bruta)
+  --------------------------------------------------------
+  [99] Resetar Firewall (Remover Todas as Regras)
+  [ 0] Sair
 
--   **Controle Abrangente de Firewall:**
-    -   **Visualização:** Exiba as regras ativas para um monitoramento transparente da sua segurança de rede.
-    -   **Gerenciamento de Portas:** Adicione ou remova portas específicas para controlar o tráfego de rede de entrada, crucial para hospedar serviços ou proteger seu sistema.
--   **Manutenção e Atualização do Sistema Simplificada:**
-    -   **Atualização de Repositórios:** Mantenha seus índices de pacotes atualizados para acesso às últimas versões de software.
-    -   **Upgrade Completo:** Atualize todos os pacotes instalados no sistema para garantir segurança e acesso a novas funcionalidades.
--   **Supervisão de Serviços:**
-    -   **Listagem:** Obtenha uma visão rápida e clara dos serviços do sistema que estão ativamente em execução, auxiliando na depuração e monitoramento.
--   **Backup e Recuperação de Configurações:**
-    -   **Criação de Backup:** Salve suas configurações de firewall em um arquivo seguro, permitindo a recuperação rápida em caso de erros ou necessidades de rollback.
-    -   **Restauração:** Restaure as regras do firewall a partir de um backup, garantindo a consistência das suas políticas de segurança.
--   **Configuração Avançada de DNS:**
-    -   **Gerenciamento de Servidores:** Adicione ou remova servidores DNS dinamicamente, otimizando a resolução de nomes de domínio e a privacidade da navegação.
--   **Gerenciamento Simplificado de Usuários:**
-    -   **Bloqueio e Desbloqueio:** Controle o acesso de usuários ao sistema, bloqueando ou reativando contas conforme a necessidade de segurança.
-
----
-
-## 🚀 Instalação Rápida
-
-A instalação do Danos Firewall Manager é simplificada para que você possa começar a usar a ferramenta em segundos. Certifique-se de ter o `git` instalado em seu sistema. Se não tiver, instale-o com:
-
-```bash
-sudo apt update && sudo apt install git -y
+Escolha uma opção:
 ```
 
-Em seguida, execute o comando abaixo no seu terminal. Ele irá clonar o repositório, conceder permissões de execução ao executável `danos`, movê-lo para o diretório `/bin` (tornando-o acessível globalmente) e, finalmente, remover os arquivos temporários da instalação.
+</div>
+
+---
+
+## 💥 Arsenal de Features
+
+* **Interface Interativa:** Chega de decorar comandos. Um menu simples e colorido guia você.
+* **Gerenciamento Completo:** Adicione e remova regras, defina políticas padrão e persista suas configurações.
+* **🍯 Honeypot Ativo:** Crie portas-armadilha que banem automaticamente qualquer IP que tentar escaneá-las.
+* **🌐 Inteligência de Ameaças:** Sincronize com blocklists globais e neutralize milhares de IPs maliciosos conhecidos.
+* **🔒 Guardião SSH:** Proteja seu servidor contra ataques de força bruta, banindo IPs com múltiplas falhas de login.
+* **Zero Dependências Pesadas:** Escrito em C, precisa apenas de ferramentas padrão do sistema (`curl`, `ipset`).
+* **Verificação Automática:** O programa checa se as dependências existem antes de rodar, e te avisa como instalar.
+
+---
+
+## 🚀 Instalação & Compilação
+
+Para forjar sua própria cópia do Danos Firewall Manager, siga estes passos.
+
+### 1. 🌐 Pré-requisitos
+
+O programa precisa de algumas ferramentas essenciais para operar seus módulos avançados. Em sistemas baseados em Debian/Ubuntu, instale tudo com um único comando:
 
 ```bash
-git clone https://github.com/DanielPereiraSilva-linux/danos-firewall.git && cd danos-firewall/ && chmod +x danos && mv danos /bin/
+sudo apt-get update && sudo apt-get install build-essential curl ipset
 ```
+* `build-essential`: Fornece o compilador `gcc` e outras ferramentas para criar o programa.
+* `curl`: Usado pelo módulo de Inteligência de Ameaças para baixar as listas de IPs.
+* `ipset`: A ferramenta secreta para gerenciar e bloquear milhares de IPs de forma ultra eficiente.
 
-Após a execução bem-sucedida deste comando, o `danos` estará instalado e pronto para ser utilizado em qualquer diretório do seu terminal.
+### 2. ⚙️ Compilação
 
----
-
-## 📖 Guia de Uso Detalhado
-
-O Danos Firewall Manager utiliza um formato de comando intuitivo:
+Com os pré-requisitos instalados, compile o código-fonte (`danos-firewall.c`) para criar o executável.
 
 ```bash
-danos [opcao] [comando] [argumentos]
+gcc danos-firewall.c -o danos-firewall
+```
+Se tudo correr bem, você terá um novo arquivo chamado `danos-firewall` no mesmo diretório.
+
+---
+
+## 🏃 Execução
+
+Para controlar o firewall do sistema, o programa precisa de privilégios de root. Sempre execute-o com `sudo`.
+
+```bash
+sudo ./danos-firewall
 ```
 
-### Opções Globais do Script
+---
 
-Estas opções são utilizadas para obter informações fundamentais sobre o próprio Danos Firewall Manager.
+## 📖 Guia de Operações
 
--   **`-h` | `--help` (Ajuda):**
-    -   **Descrição:** Este comando é a sua porta de entrada para o Danos. Ele exibe uma lista completa e detalhada de todas as opções e comandos disponíveis na ferramenta, incluindo seus respectivos usos, argumentos esperados e exemplos práticos. Essencial para novos usuários ou para refrescar a memória sobre qualquer funcionalidade.
-    -   **Parâmetros:** Nenhum.
-    -   **Requisitos:** Nenhum.
-    -   **Exemplo de Uso:**
-        ```bash
-        danos -h
-        ```
+Cada opção no menu é uma arma no seu arsenal. Saiba como usá-las.
 
--   **`-v` | `--version` (Versão):**
-    -   **Descrição:** Fornece a versão atual do Danos Firewall Manager. Útil para verificar se você está utilizando a versão mais recente, para fins de depuração ou para relatar a versão ao buscar suporte.
-    -   **Parâmetros:** Nenhum.
-    -   **Requisitos:** Nenhum.
-    -   **Exemplo de Uso:**
-        ```bash
-        danos -v
-        ```
+### Gerenciamento Básico de Regras
 
-### Comandos de Gerenciamento e Seus Parâmetros
+* **`[1] Verificar Status do Firewall`**: Mostra a configuração atual do `iptables` de forma detalhada, incluindo contadores de pacotes, regras e políticas padrão. Essencial para ter consciência situacional.
+* **`[2] Permitir Tráfego em uma Porta`**: Abre uma porta para o mundo exterior. Você especificará a porta (ex: `80`) e o protocolo (`tcp` ou `udp`).
+* **`[3] Bloquear Regra de uma Porta`**: Remove uma regra de `ACCEPT` que você criou anteriormente. Essencial para fechar acessos que não são mais necessários.
+* **`[4] Definir Política Padrão`**: Configura a estratégia principal do seu firewall. `DROP` é a mais segura (negar tudo, exceto o permitido). `ACCEPT` é mais permissiva (permitir tudo, exceto o proibido).
+* **`[5] Salvar Configuração`**: Grava suas regras `iptables` atuais em `/etc/iptables/rules.v4`. Isso **NÃO** salva os IPs bloqueados pelos módulos avançados, apenas as regras estáticas.
+* **`[6] Restaurar Configuração`**: Carrega as regras do arquivo salvo, substituindo a configuração atual.
 
-Aqui, detalhamos cada comando específico que o Danos Firewall Manager pode executar, com explicações sobre seus propósitos, parâmetros e exemplos.
+### Módulos Avançados de Segurança
 
-#### 1. `regras`
+Estes são os módulos proativos que transformam seu firewall de uma parede estática em um sistema de defesa ativo.
 
--   **Descrição:** Um comando vital para a segurança de rede. Ele lista todas as regras ativas do firewall no sistema. Isso permite uma visão abrangente das políticas de filtragem de pacotes configuradas para tráfego de entrada, saída e encaminhamento.
--   **Parâmetros:** Nenhum.
--   **Requisitos:** Permissões de `sudo`.
--   **Exemplo de Uso:**
-    ```bash
-    sudo danos regras
-    ```
+#### `[10] 🍯 Ativar Porta Armadilha (Honeypot)`
+* **O que é?** Uma armadilha. Você escolhe uma porta que não está em uso. Qualquer scanner, bot ou atacante que "tocar" nessa porta terá seu IP instantaneamente adicionado a uma blacklist permanente.
+* **Como funciona?** O tráfego para a porta escolhida é redirecionado para uma lógica que usa `ipset` para registrar e bloquear o IP de origem.
+* **Uso Prático:** Use portas comumente atacadas por bots, como `23` (Telnet), `3389` (RDP), ou portas altas aleatórias.
+* **⚠️ Aviso!** **NUNCA** use uma porta que é necessária para um serviço legítimo em seu servidor (ex: porta `80` se você tem um site, ou `22` se você usa SSH).
 
-#### 2. `addport <numero_porta> <protocolo>`
+#### `[11] 🌐 Sincronizar com Lista de Ameaças Global`
+* **O que é?** Seu firewall baixa uma lista de IPs conhecidos por atividades maliciosas (ataques, spam, botnets) de fontes confiáveis na internet (atualmente, a lista `firehol_level1`).
+* **Como funciona?** `curl` baixa a lista, e o programa usa `ipset` para carregar dezenas de milhares de IPs em uma blacklist de forma extremamente rápida e eficiente em termos de memória.
+* **Uso Prático:** Execute esta opção uma vez por semana ou mês para manter seu firewall atualizado contra as ameaças mais recentes.
 
--   **Descrição:** Adiciona uma nova regra ao firewall para permitir o tráfego de entrada em uma porta específica através de um determinado protocolo. Este comando é fundamental para expor serviços (como servidores web, SSH, bancos de dados) à rede externa ou local, garantindo que as conexões legítimas sejam aceitas.
--   **Parâmetros:**
-    -   `<numero_porta>` (obrigatório): Um número inteiro que representa a porta que você deseja abrir (ex: `80` para HTTP, `22` para SSH, `443` para HTTPS).
-    -   `<protocolo>` (obrigatório): O protocolo de rede associado à porta. Aceita `tcp` (Transmission Control Protocol) para serviços orientados a conexão ou `udp` (User Datagram Protocol) para serviços sem conexão.
--   **Requisitos:** Permissões de `sudo`.
--   **Exemplos de Uso:**
-    -   Para permitir conexões SSH na porta 22 (TCP):
-        ```bash
-        sudo danos addport 22 tcp
-        ```
-    -   Para permitir consultas DNS na porta 53 (UDP):
-        ```bash
-        sudo danos addport 53 udp
-        ```
+#### `[12] 🔒 Ativar Proteção SSH (Anti-Força Bruta)`
+* **O que é?** Um sentinela para sua porta SSH (22). Ele monitora tentativas de login falhas.
+* **Como funciona?** Usando o módulo `recent` do `iptables`, ele conta as tentativas de conexão de cada IP. Se um IP exceder o limite (atualmente 4 tentativas em 60 segundos), ele é temporariamente bloqueado.
+* **💀 AVISO DE MORTE!** Este módulo é poderoso e pode te bloquear. Se você errar sua própria senha de SSH várias vezes, **SEU IP SERÁ BANIDO**. Tenha sempre uma forma de acesso de emergência ao seu servidor (console web, acesso físico) antes de ativar esta proteção.
 
-#### 3. `removeport <numero_porta> <protocolo>`
+### Opções de Emergência
 
--   **Descrição:** Remove uma regra previamente adicionada que permitia o tráfego de entrada em uma porta e protocolo específicos. Este comando é crucial para fechar portas que não são mais utilizadas, minimizando a superfície de ataque e aumentando a segurança do sistema ao bloquear acessos desnecessários.
--   **Parâmetros:**
-    -   `<numero_porta>` (obrigatório): O número da porta que você deseja fechar.
-    -   `<protocolo>` (obrigatório): O protocolo de rede associado à porta (`tcp` ou `udp`).
--   **Requisitos:** Permissões de `sudo`. **Importante:** A regra a ser removida deve corresponder exatamente a uma regra existente no firewall para ser efetivamente removida.
--   **Exemplos de Uso:**
-    -   Para remover a permissão para a porta 80 (HTTP) TCP:
-        ```bash
-        sudo danos removeport 80 tcp
-        ```
-    -   Para remover a permissão para a porta 123 (NTP) UDP:
-        ```bash
-        sudo danos removeport 123 udp
-        ```
-
-#### 4. `services`
-
--   **Descrição:** Fornece uma lista concisa dos serviços do sistema que estão atualmente em um estado de execução (`running`). Este comando é uma ferramenta valiosa para monitorar o estado dos processos em segundo plano, verificar se um serviço esperado está ativo ou identificar serviços não essenciais que consomem recursos.
--   **Parâmetros:** Nenhum.
--   **Requisitos:** Não requer `sudo`, mas informações mais detalhadas ou sobre serviços restritos podem ser exibidas se executado com privilégios.
--   **Exemplo de Uso:**
-    ```bash
-    danos services
-    ```
-
-#### 5. `update`
-
--   **Descrição:** Atualiza a lista de pacotes disponíveis dos repositórios configurados no sistema. Este é o primeiro passo e uma prática recomendada antes de qualquer instalação ou atualização de software, garantindo que o gerenciador de pacotes tenha as informações mais recentes sobre os softwares disponíveis.
--   **Parâmetros:** Nenhum.
--   **Requisitos:** Permissões de `sudo`.
--   **Exemplo de Uso:**
-    ```bash
-    sudo danos update
-    ```
-
-#### 6. `upgrade`
-
--   **Descrição:** Realiza o upgrade de todos os pacotes instalados no sistema para suas versões mais recentes, com base nas informações obtidas pelo comando `update`. Este processo garante que seu sistema esteja com as últimas correções de segurança, melhorias de desempenho e novas funcionalidades. A operação é não-interativa.
--   **Parâmetros:** Nenhum.
--   **Requisitos:** Permissões de `sudo`.
--   **Exemplo de Uso:**
-    ```bash
-    sudo danos upgrade
-    ```
-
-#### 7. `backup`
-
--   **Descrição:** Cria um backup das regras atuais do firewall. As configurações são salvas em um arquivo chamado `/tmp/iptables-backup.conf`. Este backup é essencial para a recuperação de desastres, para testar novas regras com a possibilidade de reverter rapidamente para uma configuração funcional ou para migrar configurações entre sistemas.
--   **Parâmetros:** Nenhum.
--   **Requisitos:** Permissões de `sudo`.
--   **Exemplo de Uso:**
-    ```bash
-    sudo danos backup
-    ```
-
-#### 8. `restore`
-
--   **Descrição:** Restaura as regras do firewall a partir de um arquivo de backup previamente criado (espera-se que esteja em `/tmp/iptables-backup.conf`). Este comando substitui as regras ativas no momento pelas regras salvas no backup, sendo uma ferramenta crítica para restaurar a segurança de rede após configurações incorretas ou falhas.
--   **Parâmetros:** Nenhum.
--   **Requisitos:** Permissões de `sudo`.
--   **Exemplo de Uso:**
-    ```bash
-    sudo danos restore
-    ```
-
-#### 9. `dns <acao> <endereco_dns>`
-
--   **Descrição:** Gerencia os servidores DNS configurados no arquivo `/etc/resolv.conf`. Permite adicionar um novo servidor DNS para melhorar a resolução de nomes ou remover um existente para solucionar problemas ou alterar provedores de DNS.
--   **Parâmetros:**
-    -   `<acao>` (obrigatório): A ação a ser realizada. Aceita `add` para incluir um servidor DNS na lista ou `remove` para retirar um.
-    -   `<endereco_dns>` (obrigatório): O endereço IP do servidor DNS (ex: `8.8.8.8` para Google DNS, `1.1.1.1` para Cloudflare DNS).
--   **Requisitos:** Permissões de `sudo`.
--   **Exemplos de Uso:**
-    -   Para adicionar o DNS público do Google:
-        ```bash
-        sudo danos dns add 8.8.8.8
-        ```
-    -   Para remover o DNS público do Google:
-        ```bash
-        sudo danos dns remove 8.8.8.8
-        ```
-
-#### 10. `block-user <nome_usuario>`
-
--   **Descrição:** Bloqueia um usuário específico do sistema, impedindo-o de fazer login. Este comando modifica o status da conta do usuário, travando sua senha. É uma medida de segurança eficaz para contas comprometidas ou temporariamente suspensas.
--   **Parâmetros:**
-    -   `<nome_usuario>` (obrigatório): O nome de usuário da conta a ser bloqueada.
--   **Requisitos:** Permissões de `sudo`.
--   **Exemplo de Uso:**
-    ```bash
-    sudo danos block-user joao
-    ```
-
-#### 11. `allow-user <nome_usuario>`
-
--   **Descrição:** Permite que um usuário previamente bloqueado volte a fazer login no sistema. Este comando reativa a conta do usuário, destravando sua senha e restaurando seu acesso normal.
--   **Parâmetros:**
-    -   `<nome_usuario>` (obrigatório): O nome de usuário da conta a ser reativada.
--   **Requisitos:** Permissões de `sudo`.
--   **Exemplo de Uso:**
-    ```bash
-    sudo danos allow-user joao
-    ```
+* **`[99] 💥 Resetar Firewall`**: O botão de pânico. Esta opção apaga **TODAS** as regras, zera as blacklists e define a política padrão de tudo para `ACCEPT`. Seu sistema ficará completamente aberto, mas isso pode ser sua única saída se você se trancou para fora.
 
 ---
 
-## 🤝 Contribuições
+## 📜 Licença
 
-Sua colaboração é imensamente valiosa para o aprimoramento contínuo do Danos Firewall Manager! Se você deseja contribuir com o projeto, encontrou um bug, tem uma sugestão de nova funcionalidade ou uma ideia para melhorias, por favor:
-
--   **Abra uma [Issue](https://github.com/DanielPereiraSilva-linux/danos-firewall/issues)**: Para relatar bugs, propor novas ideias ou discutir funcionalidades.
--   **Envie um [Pull Request](https://github.com/DanielPereiraSilva-linux/danos-firewall/pulls)**: Com suas implementações de código, correções de bugs ou melhorias de documentação.
-
-Agradecemos o seu interesse e apoio!
-
----
+Este projeto é de código aberto e está sob a [Licença MIT](LICENSE). Sinta-se livre para usar, modificar e distribuir.
