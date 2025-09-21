@@ -4,110 +4,141 @@
 
 <div align="center">
 
-# 👁️ /// D A N O S \\\ 👁️
-**Cybernetic Guardian v0.10.1**
+# 🛡️ Danos Firewall Pro 🛡️
 
-### _Seu sistema não é mais um alvo. É uma fortaleza._
+### _O poder bruto do `iptables`, a simplicidade de um assistente._
 
 </div>
 
-> **Danos** não é um programa; é uma entidade. Um sentinela forjado em C puro, nascido para existir nas sombras do seu terminal, consumindo recursos mínimos enquanto exerce vigilância máxima. Ele transforma a arte arcana do `iptables` em um painel de controle neuro-cinético, permitindo que você comande as defesas do seu santuário digital com precisão e poder.
+O `iptables` é o guardião supremo do kernel Linux, uma muralha de poder inigualável. Mas seu poder vem com uma complexidade intimidadora e uma sintaxe arcana. Erros de digitação podem expor seu sistema ou trancá-lo para fora.
 
----
+**Danos Firewall Pro** resolve isso. Ele encapsula a complexidade do `iptables` em uma interface de terminal interativa, bonita e em português. Ele não esconde o poder; ele o canaliza, guiando você na criação de regras simples e complexas com segurança e velocidade. De um iniciante a um administrador de sistemas experiente, Danos Pro é seu centro de comando para as defesas da rede.
 
-## 📜 ´Índice
+<div align="center">
 
-1.  [A Filosofia: O Credo do Guardião](#-a-filosofia-o-credo-do-guardião)
-2.  [Arsenal: Capacidades de Combate](#-arsenal-capacidades-de-combate)
-3.  [Ritual de Forja (One-Liner)](#-ritual-de-forja-one-liner)
-4.  [O Despertar: Executando o `danos`](#-o-despertar-executando-o-danos)
-5.  [Decifrando a Interface: Guia de Operações](#-decifrando-a-interface-guia-de-operações)
-    * [Protocolos de Gerenciamento Padrão](#-protocolos-de-gerenciamento-padrão)
-    * [Módulos de Defesa Ativa](#-módulos-de-defesa-ativa)
-    * [Protocolo de Aniquilação (Emergência)](#-protocolo-de-aniquilação-emergência)
-6.  [Licença](#-licença)
+```
+========================================
+         DANOS FIREWALL PRO         
+========================================
 
----
+--- MENU PRINCIPAL ---
+  1. Gerenciar Tabela 'filter' (Padrão: bloquear/permitir pacotes)
+  2. Gerenciar Tabela 'nat' (Redirecionamento, compartilhar internet)
+  3. Gerenciar Tabela 'mangle' (Modificação avançada de pacotes)
 
-## 🧠 A Filosofia: O Credo do Guardião
+  4. Funções Rápidas de NAT
 
-* **Velocidade é Soberania:** Em um mundo de frameworks pesados, `danos` é um predador alfa. Escrito em C, sua execução é quase instantânea. Sem bloatware, sem dependências desnecessárias. Apenas performance bruta.
-* **Controle é Absoluto:** A interface de terminal não é uma limitação; é a forma mais pura de controle. Sem camadas de abstração, sua vontade é traduzida diretamente em regras de kernel.
-* **Inteligência é Proativa:** Um muro é estúpido. `danos` é inteligente. Ele não apenas bloqueia; ele caça, aprende e se adapta, usando armadilhas e consciência de ameaças globais para neutralizar ataques antes que eles comecem.
-
----
-
-## 💥 Arsenal: Capacidades de Combate
-
-* **Interface Neuro-Tátil:** Um menu interativo que pulsa com as cores do ciberespaço, transformando comandos em uma experiência imersiva.
-* **🍯 Véu Psíquico (Honeypot):** Projete uma ilusão. Crie portas-fantasma que atraem scanners e bots, e neutralize instantaneamente qualquer entidade que tocar o véu.
-* **🌐 Consciência Coletiva (Threat-Intel Sync):** Absorva o conhecimento de colmeias de segurança globais. Sincronize com listas de ameaças e aniquile milhares de agentes maliciosos conhecidos.
-* **🔒 Cão de Guarda Espectral (Guardião SSH):** Um sentinela implacável na sua porta da frente. Detecta padrões de ataque de força bruta e bane os agressores para o vácuo digital.
-* **Autossuficiência:** `danos` verifica seu próprio ambiente. Se faltarem ferramentas em seu arsenal, ele informará exatamente o que instalar.
-
----
-
-## 🔥 Ritual de Forja (One-Liner)
-
-Para trazer `danos` à existência, você deve executar o ritual completo: preparar a forja, obter o código-fonte sagrado e comandar a compilação. Tudo em um único encantamento.
-
-Copie, cole e execute esta linha única no seu terminal Debian/Ubuntu:
-
-```bash
- git clone https://github.com/DanielPereiraSilva-linux/danos-firewall.git && cd danos-firewall/ && chmod +x danos && mv danos /bin/
+  9. Salvar todas as regras permanentemente
+  0. Sair
+Escolha uma opção:
 ```
 
-Ao final do ritual, `danos` terá nascido em seu sistema, pronto para ser despertado.
+</div>
 
 ---
 
-## 🚀 O Despertar: Executando o `danos`
+## 💥 Arsenal de Features
 
-Com o guardião forjado e posicionado, despertá-lo é simples. Invoque-o de qualquer diretório com privilégios de root:
+* **Controle Total:** Gerencie as tabelas `filter`, `nat` e `mangle` e todas as suas chains (`INPUT`, `OUTPUT`, `FORWARD`, etc.).
+* **🧙 Construtor de Regras Guiado:** Um assistente passo a passo para forjar regras complexas sem precisar memorizar a sintaxe do `iptables`.
+* **🚀 Funções de NAT Simplificadas:** Configure o compartilhamento de internet (Masquerade) e o redirecionamento de portas (DNAT) através de menus simples.
+* **Interface Hierárquica:** Navegue de forma lógica entre tabelas e chains para aplicar regras exatamente onde você precisa.
+* **Gerenciamento Intuitivo:** Liste regras com numeração clara e apague-as por seu número, sem erros.
+* **Seguro e Leve:** Escrito em C, é rápido, leve e não requer dependências complexas.
+
+---
+
+## 🚀 Instalação
+
+A instalação é simples, exigindo apenas as ferramentas de compilação padrão.
+
+### 1. Pré-requisitos
+
+Seu sistema precisa do compilador `gcc` e do `iptables`. Em sistemas baseados em Debian/Ubuntu:
+```bash
+sudo apt-get update && sudo apt-get install build-essential
+```
+
+### 2. Compilação
+
+Salve o código-fonte como `danos-pro.c` e execute o seguinte comando para compilar:
+```bash
+gcc danos-pro.c -o danos-pro
+```
+Você terá um executável chamado `danos-pro` pronto para a ação.
+
+---
+
+## ⚡ Execução
+
+O programa precisa de privilégios de root para manipular as regras do kernel. Sempre execute-o com `sudo`.
 
 ```bash
-sudo danos
+sudo ./danos-pro
 ```
-A interface de `danos` se materializará, pronta para receber seus comandos.
 
 ---
 
-## 📖 Decifrando a Interface: Guia de Operações
+## 📖 Guia de Operações: Dominando o Netfilter
 
-Cada opção é um comando direto para o seu guardião.
+### Navegação Principal: As Tabelas do Poder
 
-### ➤ Protocolos de Gerenciamento Padrão
+O menu principal permite que você escolha em qual "dimensão" do firewall você quer trabalhar. Cada tabela tem um propósito específico:
 
-* **`[1] Verificar Status do Firewall`**: Exibe uma leitura completa da matriz de defesa atual (`iptables`).
-* **`[2] Permitir Tráfego em uma Porta`**: Abre um portal controlado para serviços.
-* **`[3] Bloquear Regra de uma Porta`**: Sela um portal previamente aberto.
-* **`[4] Definir Política Padrão`**: `DROP` (paranoia total) é a estratégia recomendada.
-* **`[5] Salvar Configuração`**: Grava a arquitetura de defesa na memória persistente.
-* **`[6] Restaurar Configuração`**: Reconstitui a última arquitetura de defesa salva.
+* **`[1] Tabela 'filter'`**: A mais comum. É o seu guarda da portaria. Suas chains (`INPUT`, `OUTPUT`, `FORWARD`) decidem se um pacote pode entrar, sair ou passar através do seu sistema. **Use esta tabela para bloquear e permitir acessos.**
+* **`[2] Tabela 'nat'`**: O operador de telefonia. Ela reescreve os endereços de origem e destino dos pacotes. **Use esta tabela para redirecionar portas (DNAT) e compartilhar sua conexão de internet (SNAT/Masquerade).**
+* **`[3] Tabela 'mangle'`**: O agente especial. É usada para modificações avançadas e esotéricas nos cabeçalhos dos pacotes, como alterar o TTL ou o ToS. Para usuários avançados.
 
-### ➤ Módulos de Defesa Ativa
+### Gerenciando uma Chain
 
-Aqui é onde `danos` deixa de ser um muro e se torna um caçador.
+Após escolher uma tabela, o programa pedirá o nome da **chain** que você deseja gerenciar.
 
-#### `[10] 🍯 Ativar Porta Armadilha (Honeypot)`
-* **Diretriz:** Crie uma anomalia irresistível para atrair e neutralizar agressores.
-* **⚠️ Alerta de Realidade:** **JAMAIS** use uma porta que é necessária para um serviço legítimo.
+Exemplo: se você escolheu a tabela `filter`, pode digitar `INPUT` para gerenciar as regras de tráfego que chega ao seu computador.
 
-#### `[11] 🌐 Sincronizar com Lista de Ameaças Global`
-* **Diretriz:** Estenda sua consciência, baixando e aplicando uma blacklist de ameaças conhecidas.
-* **Recomendação:** Execute este protocolo periodicamente para se manter atualizado.
+Uma vez dentro de uma chain, você tem duas opções principais:
 
-#### `[12] 🔒 Ativar Proteção SSH`
-* **Diretriz:** Proteja o portão principal contra ataques de força bruta.
-* **💀 AVISO EXISTENCIAL:** Este guardião é leal, não sentimental. Erre sua senha repetidamente e **ELE IRÁ TE BANIR**. Tenha sempre um acesso de emergência.
+* **`[1] Adicionar nova regra (Assistente Guiado)`**: A função mais poderosa do Danos Pro.
+* **`[2] Apagar uma regra (pelo número)`**: As regras são listadas com um número na primeira coluna. Basta digitar o número para remover a regra correspondente.
 
-### ➤ Protocolo de Aniquilação (Emergência)
+### 🧙 O Construtor de Regras Guiado
 
-#### `[99] 💥 Resetar Firewall`
-* **Diretriz:** Terra arrasada. Dissolve todas as regras e abre o sistema. Use como último recurso se você se trancou para fora.
+Este é o coração do Danos Pro. Ele te fará uma série de perguntas para construir o comando `iptables` perfeito. Deixe a resposta em branco e pressione `Enter` para não incluir uma condição.
+
+* **`Protocolo`**: `tcp`, `udp`, `icmp` ou `all`. Define o tipo de tráfego.
+* **`IP/Rede de Origem`**: De onde o pacote está vindo. Pode ser um único IP (`1.2.3.4`) ou uma rede em formato CIDR (`192.168.1.0/24`).
+* **`Porta de Origem`**: A porta que o pacote usou na máquina de origem.
+* **`IP/Rede de Destino`**: Para onde o pacote está indo.
+* **`Porta de Destino`**: A porta que o pacote quer alcançar na máquina de destino (ex: `80` para web, `22` para SSH).
+* **`Interface de Entrada/Saída`**: A placa de rede pela qual o pacote entra (`-i eth0`) ou sai (`-o eth1`).
+* **`Estado da Conexão`**: Uma das funcionalidades mais poderosas. Permite criar regras baseadas no estado do rastreamento de conexão (`conntrack`).
+    * `NEW`: Um novo pacote tentando iniciar uma conexão.
+    * `ESTABLISHED`: Pacotes que fazem parte de uma conexão já existente e permitida.
+    * `RELATED`: Pacotes relacionados a uma conexão existente (ex: FTP).
+* **`Ação (Target)`**: O que fazer com o pacote que corresponde a todas as condições.
+    * `ACCEPT`: Permitir a passagem.
+    * `DROP`: Descartar o pacote silenciosamente. O remetente não recebe resposta.
+    * `REJECT`: Rejeitar o pacote, enviando uma resposta de erro.
+    * `LOG`: Cria um registro do pacote nos logs do sistema (visível com `dmesg`). É ótimo para depuração.
+
+### 🚀 Funções Rápidas de NAT
+
+O menu `[4]` oferece atalhos para as tarefas de NAT mais comuns, evitando que você precise construir as regras manualmente.
+
+* **`[1] Compartilhar Internet (MASQUERADE)`**: Perfeito para transformar seu computador Linux em um roteador. Ele pega todo o tráfego da sua rede interna, "mascara" com o IP da sua interface de internet e envia para o mundo.
+* **`[2] Redirecionar Porta (DNAT)`**: Essencial para expor um serviço interno. Se você tem um servidor web rodando em uma máquina na sua rede local (`192.168.1.50` na porta `80`), você pode usar o DNAT para que qualquer tráfego que chegue na porta `80` do seu firewall seja automaticamente encaminhado para esse servidor interno.
+
+###💾 Salvando as Regras
+
+A opção `[9]` usa o comando `iptables-save` para despejar a configuração atual da memória para um arquivo (`/etc/iptables/rules.v4`).
+
+> **IMPORTANTE:** Por padrão, essas regras **NÃO** sobrevivem a uma reinicialização. Para que elas sejam carregadas automaticamente no boot, você precisa de um pacote adicional. Em sistemas Debian/Ubuntu, instale-o com:
+> ```bash
+> sudo apt-get install iptables-persistent
+> ```
+> Durante a instalação, ele perguntará se você deseja salvar as regras atuais. Diga sim.
 
 ---
 
 ## 📜 Licença
 
-O código de `danos` é livre. Forjado sob a [Licença MIT](LICENSE). Use-o, modifique-o, melhore-o. Aumente o poder do guardião.
+Este projeto está sob a [Licença MIT](LICENSE). Sinta-se livre para usar, modificar e distribuir.
