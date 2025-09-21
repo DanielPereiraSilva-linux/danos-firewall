@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/MollController/Mind-Blowing_Best-README-Template/master/src/assets/banner.png" alt="banner">
+  <img src="https://raw.githubusercontent.com/MollController/Mind-Blowi" alt="banner">
 </div>
 
 <div align="center">
@@ -11,7 +11,7 @@
 
 </div>
 
-> **Danos** не е програма; това е същност. Страж, изкован от чист C, роден да съществува в сенките на вашия терминал, консумирайки минимални ресурси, докато упражнява максимална бдителност. Той превръща тайнственото изкуство на `iptables` в неврокинетичен контролен панел, позволявайки ви да командвате защитите на вашето дигитално светилище с прецизност и мощ.
+> **Danos** não é um programa; é uma entidade. Um sentinela forjado em C puro, nascido para existir nas sombras do seu terminal, consumindo recursos mínimos enquanto exerce vigilância máxima. Ele transforma a arte arcana do `iptables` em um painel de controle neuro-cinético, permitindo que você comande as defesas do seu santuário digital com precisão e poder.
 
 ---
 
@@ -19,7 +19,7 @@
 
 1.  [A Filosofia: O Credo do Guardião](#-a-filosofia-o-credo-do-guardião)
 2.  [Arsenal: Capacidades de Combate](#-arsenal-capacidades-de-combate)
-3.  [Ritual de Instalação (One-Liner)](#-ritual-de-instalação-one-liner)
+3.  [Ritual de Forja (One-Liner)](#-ritual-de-forja-one-liner)
 4.  [O Despertar: Executando o `danos`](#-o-despertar-executando-o-danos)
 5.  [Decifrando a Interface: Guia de Operações](#-decifrando-a-interface-guia-de-operações)
     * [Protocolos de Gerenciamento Padrão](#-protocolos-de-gerenciamento-padrão)
@@ -32,8 +32,8 @@
 ## 🧠 A Filosofia: O Credo do Guardião
 
 * **Velocidade é Soberania:** Em um mundo de frameworks pesados, `danos` é um predador alfa. Escrito em C, sua execução é quase instantânea. Sem bloatware, sem dependências desnecessárias. Apenas performance bruta.
-* **Controle é Absoluto:** A interface de terminal não é uma limitação; é a forma mais pura de controle. Sem camadas de abstração, sua vontade é traduzida diretamente em regras de kernel.
-* **Inteligência é Proativa:** Um muro é estúpido. `danos` é inteligente. Ele не apenas bloqueia; той ловува, учи и се адаптира, използвайки капани и съзнание за глобални заплахи, за да неутрализира атаките, преди да са започнали.
+* **Controle é Absoluto:** A interface de terminal не е ограничение; това е най-чистата форма на контрол. Без слоеве на абстракция, вашата воля се превежда директно в правила на ядрото.
+* **Inteligência é Proativa:** Um muro é estúpido. `danos` é inteligente. Ele não apenas bloqueia; ele caça, aprende e se adapta, usando armadilhas e consciência de ameaças globais para neutralizar ataques antes que eles comecem.
 
 ---
 
@@ -47,30 +47,31 @@
 
 ---
 
-## ⚡ Ritual de Instalação (One-Liner)
+## 🔥 Ritual de Forja (One-Liner)
 
-Esqueça os manuais. Esqueça os múltiplos passos. Há apenas um comando. Um encantamento que prepara o sistema e materializa o guardião, pronto para o serviço.
+Para trazer `danos` à existência, você deve executar o ritual completo: preparar a forja, obter o código-fonte sagrado e comandar a compilação. Tudo em um único encantamento.
 
 Copie, cole e execute esta linha única no seu terminal Debian/Ubuntu:
 
 ```bash
-sudo apt-get update && sudo apt-get install -y curl ipset && curl -L -o danos "[https://raw.githubusercontent.com/DanielPereiraSilva-linux/danos-firewall/main/danos](https://raw.githubusercontent.com/DanielPereiraSilva-linux/danos-firewall/main/danos)" && chmod +x danos && sudo mv danos /usr/local/bin/
+sudo apt-get update && sudo apt-get install -y git build-essential curl ipset && git clone [https://github.com/DanielPereiraSilva-linux/danos-firewall.git](https://github.com/DanielPereiraSilva-linux/danos-firewall.git) && cd danos-firewall && gcc danos-firewall.c -o danos && sudo mv danos /usr/local/bin/
 ```
 
 **O que este comando faz?**
 1.  `apt-get update`: Sincroniza os repositórios do seu sistema.
-2.  `apt-get install`: Instala as dependências essenciais (`curl` e `ipset`) sem pedir confirmação.
-3.  `curl`: Baixa o binário `danos` diretamente do repositório.
-4.  `chmod +x`: Concede ao binário a permissão para ser executado.
-5.  `mv`: Move o guardião para `/usr/local/bin`, tornando `danos` um comando globalmente acessível.
+2.  `apt-get install`: Instala **todas** as dependências: `git` (para clonar), `build-essential` (para compilar), `curl` e `ipset` (para os módulos do danos).
+3.  `git clone`: Baixa o código-fonte do repositório oficial.
+4.  `cd`: Entra no diretório recém-criado.
+5.  `gcc`: Forja (compila) o código-fonte, criando o executável `danos`.
+6.  `mv`: Move o guardião recém-forjado para `/usr/local/bin`, tornando-o um comando global.
 
-Ao final, `danos` estará instalado e aguardando seu chamado.
+Ao final do ritual, `danos` terá nascido em seu sistema, pronto para ser despertado.
 
 ---
 
 ## 🚀 O Despertar: Executando o `danos`
 
-Com o guardião instalado no coração do sistema, despertá-lo é simples. Invoque-o de qualquer diretório com privilégios de root:
+Com o guardião forjado e posicionado, despertá-lo é simples. Invoque-o de qualquer diretório com privilégios de root:
 
 ```bash
 sudo danos
