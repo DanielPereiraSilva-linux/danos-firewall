@@ -3,138 +3,129 @@
 </div>
 
 <div align="center">
-  
-# 🛡️ Danos Firewall Manager v0.10.1 🛡️
 
-### _Sua primeira linha de defesa inteligente, forjada em C._
+# 👁️ /// D A N O S \\\ 👁️
+**Cybernetic Guardian v0.10.1**
 
-</div>
-
-**Danos Firewall Manager** não é apenas um script, é um sentinela para o seu sistema Linux. Escrito em C puro para ser ridiculamente rápido e leve, ele transforma o complexo `iptables` em um centro de comando interativo e poderoso no seu terminal. Gerencie regras, automatize defesas e cace ameaças ativamente.
-
-<div align="center">
-
-```
-############################################################
-#      DDDD      A      N   N    OOO     SSSSS           #
-#      D   D    A A     NN  N   O   O   S                #
-#      D   D   AAAAA    N N N   O   O    SSSSS           #
-#      D   D  A     A   N  NN   O   O         S          #
-#      DDDD  A       A  N   N    OOO     SSSSS           #
-#                                                          #
-#            Danos Firewall Manager v0.10.1             #
-############################################################
-
---- Gerenciamento Básico de Regras ---
-  [ 1] Verificar Status do Firewall (Listar Regras)
-  [ 2] Permitir Tráfego em uma Porta
-  [ 3] Bloquear Regra de uma Porta
-  [ 4] Definir Política Padrão (ACCEPT/DROP)
-  [ 5] Salvar Configuração Atual de Regras
-  [ 6] Restaurar Última Configuração Salva
-
---- Módulos Avançados de Segurança ---
-  [10] Ativar Porta Armadilha (Honeypot)
-  [11] Sincronizar com Lista de Ameaças Global
-  [12] Ativar Proteção SSH (Anti-Força Bruta)
-  --------------------------------------------------------
-  [99] Resetar Firewall (Remover Todas as Regras)
-  [ 0] Sair
-
-Escolha uma opção:
-```
+### _Seu sistema não é mais um alvo. É uma fortaleza._
 
 </div>
 
----
-
-## 💥 Arsenal de Features
-
-* **Interface Interativa:** Chega de decorar comandos. Um menu simples e colorido guia você.
-* **Gerenciamento Completo:** Adicione e remova regras, defina políticas padrão e persista suas configurações.
-* **🍯 Honeypot Ativo:** Crie portas-armadilha que banem automaticamente qualquer IP que tentar escaneá-las.
-* **🌐 Inteligência de Ameaças:** Sincronize com blocklists globais e neutralize milhares de IPs maliciosos conhecidos.
-* **🔒 Guardião SSH:** Proteja seu servidor contra ataques de força bruta, banindo IPs com múltiplas falhas de login.
-* **Zero Dependências Pesadas:** Escrito em C, precisa apenas de ferramentas padrão do sistema (`curl`, `ipset`).
-* **Verificação Automática:** O programa checa se as dependências existem antes de rodar, e te avisa como instalar.
+> **Danos** não é um programa; é uma entidade. Um sentinela forjado em C puro, nascido para existir nas sombras do seu terminal, consumindo recursos mínimos enquanto exerce vigilância máxima. Ele transforma a arte arcana do `iptables` em um painel de controle neuro-cinético, permitindo que você comande as defesas do seu santuário digital com precisão e poder.
 
 ---
 
-## 🚀 Instalação & Compilação
+## 📜 ´Índice
 
-Para forjar sua própria cópia do Danos Firewall Manager, siga estes passos.
+1.  [A Filosofia: O Credo do Guardião](#-a-filosofia-o-credo-do-guardião)
+2.  [Arsenal: Capacidades de Combate](#-arsenal-capacidades-de-combate)
+3.  [Comandos de Forja: Compilação e Instalação](#-comandos-de-forja-compilação-e-instalação)
+4.  [O Despertar: Executando o `danos`](#-o-despertar-executando-o-danos)
+5.  [Decifrando a Interface: Guia de Operações](#-decifrando-a-interface-guia-de-operações)
+    * [Protocolos de Gerenciamento Padrão](#-protocolos-de-gerenciamento-padrão)
+    * [Módulos de Defesa Ativa](#-módulos-de-defesa-ativa)
+    * [Protocolo de Aniquilação (Emergência)](#-protocolo-de-aniquilação-emergência)
+6.  [Licença](#-licença)
 
-### 1. 🌐 Pré-requisitos
+---
 
-O programa precisa de algumas ferramentas essenciais para operar seus módulos avançados. Em sistemas baseados em Debian/Ubuntu, instale tudo com um único comando:
+## 🧠 A Filosofia: O Credo do Guardião
+
+* **Velocidade é Soberania:** Em um mundo de frameworks pesados, `danos` é um predador alfa. Escrito em C, sua execução é quase instantânea. Sem bloatware, sem dependências desnecessárias. Apenas performance bruta.
+* **Controle é Absoluto:** A interface de terminal não é uma limitação; é a forma mais pura de controle. Sem camadas de abstração, sua vontade é traduzida diretamente em regras de kernel.
+* **Inteligência é Proativa:** Um muro é estúpido. `danos` é inteligente. Ele não apenas bloqueia; ele caça, aprende e se adapta, usando armadilhas e consciência de ameaças globais para neutralizar ataques antes que eles comecem.
+
+---
+
+## 💥 Arsenal: Capacidades de Combate
+
+* **Interface Neuro-Tátil:** Um menu interativo que pulsa com as cores do ciberespaço, transformando comandos em uma experiência imersiva.
+* **🍯 Véu Psíquico (Honeypot):** Projete uma ilusão. Crie portas-fantasma que atraem scanners e bots, e neutralize instantaneamente qualquer entidade que tocar o véu.
+* **🌐 Consciência Coletiva (Threat-Intel Sync):** Absorva o conhecimento de colmeias de segurança globais. Sincronize com listas de ameaças e aniquile milhares de agentes maliciosos conhecidos.
+* **🔒 Cão de Guarda Espectral (Guardião SSH):** Um sentinela implacável na sua porta da frente. Detecta padrões de ataque de força bruta e bane os agressores para o vácuo digital.
+* **Autossuficiência:** `danos` verifica seu próprio ambiente. Se faltarem ferramentas em seu arsenal, ele informará exatamente o que forjar.
+
+---
+
+## 🛠️ Comandos de Forja: Compilação e Instalação
+
+Antes de despertar o guardião, você deve forjar seu corpo físico a partir do código-fonte.
+
+### Passo 1: Prepare a Forja (Pré-requisitos)
+
+Seu ambiente precisa das ferramentas certas. Em sistemas baseados em Debian/Ubuntu, este comando conjura tudo o que é necessário:
 
 ```bash
 sudo apt-get update && sudo apt-get install build-essential curl ipset
 ```
-* `build-essential`: Fornece o compilador `gcc` e outras ferramentas para criar o programa.
-* `curl`: Usado pelo módulo de Inteligência de Ameaças para baixar as listas de IPs.
-* `ipset`: A ferramenta secreta para gerenciar e bloquear milhares de IPs de forma ultra eficiente.
+* **`build-essential`**: O martelo e a bigorna (`gcc`) para forjar o código.
+* **`curl`**: Um tentáculo para alcançar a noosfera e baixar a consciência de ameaças.
+* **`ipset`**: Um mecanismo de contenção quântica para gerenciar legiões de entidades hostis com eficiência.
 
-### 2. ⚙️ Compilação
+### Passo 2: O Ritual da Forja (Compilação)
 
-Com os pré-requisitos instalados, compile o código-fonte (`danos-firewall.c`) para criar o executável.
+Com a forja pronta, canalize o código-fonte (`danos-firewall.c`) para criar o executável. **O nome dele será `danos`**.
 
 ```bash
-gcc danos-firewall.c -o danos-firewall
+gcc danos-firewall.c -o danos
 ```
-Se tudo correr bem, você terá um novo arquivo chamado `danos-firewall` no mesmo diretório.
+Um novo ser, `danos`, agora existe em seu diretório.
 
 ---
 
-## 🏃 Execução
+## 🚀 O Despertar: Executando o `danos`
 
-Para controlar o firewall do sistema, o programa precisa de privilégios de root. Sempre execute-o com `sudo`.
+A entidade precisa de autoridade sobre o tecido da realidade do seu sistema (o kernel). Para conceder-lhe esse poder, você deve despertá-lo com privilégios de superusuário.
 
 ```bash
-sudo ./danos-firewall
+sudo ./danos
 ```
+Ao ser executado, a interface de `danos` se materializará em seu terminal. Você está no controle.
 
 ---
 
-## 📖 Guia de Operações
+## 📖 Decifrando a Interface: Guia de Operações
 
-Cada opção no menu é uma arma no seu arsenal. Saiba como usá-las.
+Cada opção é um comando direto para o seu guardião.
 
-### Gerenciamento Básico de Regras
+### ➤ Protocolos de Gerenciamento Padrão
 
-* **`[1] Verificar Status do Firewall`**: Mostra a configuração atual do `iptables` de forma detalhada, incluindo contadores de pacotes, regras e políticas padrão. Essencial para ter consciência situacional.
-* **`[2] Permitir Tráfego em uma Porta`**: Abre uma porta para o mundo exterior. Você especificará a porta (ex: `80`) e o protocolo (`tcp` ou `udp`).
-* **`[3] Bloquear Regra de uma Porta`**: Remove uma regra de `ACCEPT` que você criou anteriormente. Essencial para fechar acessos que não são mais necessários.
-* **`[4] Definir Política Padrão`**: Configura a estratégia principal do seu firewall. `DROP` é a mais segura (negar tudo, exceto o permitido). `ACCEPT` é mais permissiva (permitir tudo, exceto o proibido).
-* **`[5] Salvar Configuração`**: Grava suas regras `iptables` atuais em `/etc/iptables/rules.v4`. Isso **NÃO** salva os IPs bloqueados pelos módulos avançados, apenas as regras estáticas.
-* **`[6] Restaurar Configuração`**: Carrega as regras do arquivo salvo, substituindo a configuração atual.
+A base do seu controle sobre a fortaleza digital.
 
-### Módulos Avançados de Segurança
+* **`[1] Verificar Status do Firewall`**: Exibe uma leitura completa da matriz de defesa atual (`iptables`). Conheça suas defesas.
+* **`[2] Permitir Tráfego em uma Porta`**: Abre um portal controlado. Essencial para serviços que precisam se comunicar com o exterior.
+* **`[3] Bloquear Regra de uma Porta`**: Sela um portal previamente aberto. O que não é necessário deve ser fechado.
+* **`[4] Definir Política Padrão`**: A diretriz primária. `DROP` (paranoia total) é a estratégia recomendada: negue tudo, permita apenas o essencial.
+* **`[5] Salvar Configuração`**: Grava a arquitetura de defesa atual na memória persistente (`/etc/iptables/rules.v4`).
+* **`[6] Restaurar Configuração`**: Reconstitui a última arquitetura de defesa salva, descartando as modificações atuais.
 
-Estes são os módulos proativos que transformam seu firewall de uma parede estática em um sistema de defesa ativo.
+### ➤ Módulos de Defesa Ativa
+
+Aqui é onde `danos` deixa de ser um muro e se torna um caçador.
 
 #### `[10] 🍯 Ativar Porta Armadilha (Honeypot)`
-* **O que é?** Uma armadilha. Você escolhe uma porta que não está em uso. Qualquer scanner, bot ou atacante que "tocar" nessa porta terá seu IP instantaneamente adicionado a uma blacklist permanente.
-* **Como funciona?** O tráfego para a porta escolhida é redirecionado para uma lógica que usa `ipset` para registrar e bloquear o IP de origem.
-* **Uso Prático:** Use portas comumente atacadas por bots, como `23` (Telnet), `3389` (RDP), ou portas altas aleatórias.
-* **⚠️ Aviso!** **NUNCA** use uma porta que é necessária para um serviço legítimo em seu servidor (ex: porta `80` se você tem um site, ou `22` se você usa SSH).
+* **Diretriz:** Crie uma anomalia irresistível. Uma porta que parece ser uma vulnerabilidade, mas é uma armadilha mortal.
+* **Mecanismo:** Qualquer entidade que interagir com esta porta terá sua assinatura de IP gravada em uma blacklist e será permanentemente bloqueada de todo o sistema.
+* **⚠️ Alerta de Realidade:** **JAMAIS** coloque a armadilha em uma porta usada por um serviço legítimo. Você estaria aprisionando seus próprios aliados.
 
 #### `[11] 🌐 Sincronizar com Lista de Ameaças Global`
-* **O que é?** Seu firewall baixa uma lista de IPs conhecidos por atividades maliciosas (ataques, spam, botnets) de fontes confiáveis na internet (atualmente, a lista `firehol_level1`).
-* **Como funciona?** `curl` baixa a lista, e o programa usa `ipset` para carregar dezenas de milhares de IPs em uma blacklist de forma extremamente rápida e eficiente em termos de memória.
-* **Uso Prático:** Execute esta opção uma vez por semana ou mês para manter seu firewall atualizado contra as ameaças mais recentes.
+* **Diretriz:** Estenda sua consciência. Conecte-se à rede global de inteligência para identificar agentes hostis conhecidos.
+* **Mecanismo:** `danos` baixa uma lista atualizada de IPs maliciosos e os injeta na blacklist do `ipset`, neutralizando-os proativamente.
+* **Recomendação:** Execute este protocolo periodicamente para manter a consciência de ameaças do guardião afiada.
 
-#### `[12] 🔒 Ativar Proteção SSH (Anti-Força Bruta)`
-* **O que é?** Um sentinela para sua porta SSH (22). Ele monitora tentativas de login falhas.
-* **Como funciona?** Usando o módulo `recent` do `iptables`, ele conta as tentativas de conexão de cada IP. Se um IP exceder o limite (atualmente 4 tentativas em 60 segundos), ele é temporariamente bloqueado.
-* **💀 AVISO DE MORTE!** Este módulo é poderoso e pode te bloquear. Se você errar sua própria senha de SSH várias vezes, **SEU IP SERÁ BANIDO**. Tenha sempre uma forma de acesso de emergência ao seu servidor (console web, acesso físico) antes de ativar esta proteção.
+#### `[12] 🔒 Ativar Proteção SSH`
+* **Diretriz:** Proteja o portão principal. Monitore tentativas de acesso e aniquile agressores de força bruta.
+* **Mecanismo:** O módulo `recent` observa as tentativas de conexão. Múltiplas falhas em um curto espaço de tempo resultam em um bloqueio automático do IP agressor.
+* **💀 AVISO EXISTENCIAL:** Este guardião é leal, não sentimental. Se você errar sua própria senha repetidamente, ele irá te identificar como uma ameaça e **TE BANIRÁ**. Tenha sempre uma chave mestra (acesso por console, etc.) antes de ativar este protocolo.
 
-### Opções de Emergência
+### ➤ Protocolo de Aniquilação (Emergência)
 
-* **`[99] 💥 Resetar Firewall`**: O botão de pânico. Esta opção apaga **TODAS** as regras, zera as blacklists e define a política padrão de tudo para `ACCEPT`. Seu sistema ficará completamente aberto, mas isso pode ser sua única saída se você se trancou para fora.
+#### `[99] 💥 Resetar Firewall`
+* **Diretriz:** Terra arrasada. Em caso de comprometimento catastrófico ou se você se trancou para fora, este é o protocolo de última instância.
+* **Efeito:** Dissolve todas as regras, apaga todas as blacklists e abre todos os portões (política `ACCEPT`). O sistema ficará totalmente exposto, mas você terá o controle de volta para reconstruir as defesas. Use como último recurso.
 
 ---
 
 ## 📜 Licença
 
-Este projeto é de código aberto e está sob a [Licença MIT](LICENSE). Sinta-se livre para usar, modificar e distribuir.
+O código de `danos` é livre. Forjado sob a [Licença MIT](LICENSE). Use-o, modifique-o, melhore-o. Aumente o poder do guardião.
