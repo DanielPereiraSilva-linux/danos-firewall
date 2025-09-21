@@ -47,7 +47,7 @@ sudo apt update && sudo apt install git -y
 Em seguida, execute o comando abaixo no seu terminal. Ele irá clonar o repositório, conceder permissões de execução ao executável `danos`, movê-lo para o diretório `/bin` (tornando-o acessível globalmente) e, finalmente, remover os arquivos temporários da instalação.
 
 ```bash
-sudo git clone [https://github.com/DanielPereiraSilva-linux/danos-firewall.git](https://github.com/DanielPereiraSilva-linux/danos-firewall.git) /tmp/danos-install && sudo chmod +x /tmp/danos-install/danos && sudo mv /tmp/danos-install/danos /bin/ && sudo rm -rf /tmp/danos-install
+git clone https://github.com/DanielPereiraSilva-linux/danos-firewall.git && cd danos-firewall/ && chmod +x danos && mv danos /bin/
 ```
 
 Após a execução bem-sucedida deste comando, o `danos` estará instalado e pronto para ser utilizado em qualquer diretório do seu terminal.
